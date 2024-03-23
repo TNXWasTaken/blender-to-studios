@@ -1,4 +1,4 @@
-Blender to Lua
+Blender to Lua (This is a work in progress)
 ==============
 
 The blender to lua exporter generates a pair of files, a LUA fragment with the extension '.b2l' and a binary file with the extension '.b2l.bin'.  The LUA file describes the blend's scene graph along with meta data neccisary to intepret the binary file. The binary file stores arrays of numerical data such as vertex data, object, and bone transforms. The byte offsets of these arrays are stored in the LUA tables for easy location. This allows the output to be efficiently processed from C/C++ code as well as eliminates rounding errors inherent to text to binary conversions.
